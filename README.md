@@ -1,5 +1,7 @@
 # Alfred Bot
 
+## Solution branch
+
 - [ ] Create a project folder in your Java stack folder called "alfredBot"
 - [ ] Create an [`AlfredQuotes.java`](src/AlfredQuotes.java) class file that will hold all of Alfredbot's functionality.
 - [ ] Create an [`AlfredTest.java`](src/AlfredTest.java) main program file that will execute code to test our `AlfredQuotes` class.
