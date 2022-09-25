@@ -11,18 +11,17 @@ public class AlfredQuotes {
      * @param name
      * @return
      */
-    public String guestGreeting(String name) {
-        // YOUR CODE HERE
-        return "place holder for guest greeting return string";
+    public String guestGreeting(String name, String dayPeriod) {
+        return String.format("Good %s, %s. Lovely to see you.", dayPeriod, name);
     }
 
     /**
      * Returns a polite announcement of the current date and time.
-     * @return
+     * @return String
+     * It is currently <current data/time>
      */
     public String dateAnnouncement() {
-        // YOUR CODE HERE
-        return "place holder for date announcement return string";
+        return String.format("It is currently %s", new Date());
     }
 
     /**
@@ -31,8 +30,16 @@ public class AlfredQuotes {
      * @return
      */
     public String respondBeforeAlexis(String conversation) {
-        // YOUR CODE HERE
-        return "for snarky response return string";
+
+        if(conversation.indexOf("Alexis") > -1) {
+            return "She's really of no help. What can I get for you?";
+        }
+
+        if (conversation.indexOf("Alfred") > -1) {
+            return "At your service, naturally. How may I be of assistance?";
+        }
+
+        return "Right. And with that I shall retire.";
     }
 
     // NINJA BONUS
