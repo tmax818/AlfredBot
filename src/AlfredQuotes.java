@@ -6,9 +6,14 @@ public class AlfredQuotes {
         return "Hello, lovely to see you. How are you?";
     }
 
+    public String guestGreeting(String name){
+        return String.format("Hello, %s. Lovely to see you.", name);
+    }
+
     /**
      * Returns a greeting that includes the person's name.
      * @param name
+     * @param dayPeriod
      * @return
      */
     public String guestGreeting(String name, String dayPeriod) {
