@@ -9,7 +9,7 @@ public class AlfredQuotes {
     /**
      * Returns a greeting that includes the person's name.
      * @param name
-     * @return
+     * @return String
      */
     public String guestGreeting(String name) {
         // YOUR CODE HERE
